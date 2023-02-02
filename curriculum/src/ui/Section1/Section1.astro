@@ -1,0 +1,55 @@
+---
+import Tittle from "../Tittle/Tittle.astro";
+import Description from "../description/description.astro";
+import Button1 from "../Button/Button1.astro";
+import Button2 from "../Button/Button2.astro";
+---
+<section>
+    <div id="containerTittle">
+        <Tittle/>
+    </div>
+
+    <div id="containerDescription">
+        <Description/>
+    </div>
+
+    <div id="containerButton">
+        <Button1/>
+        <Button2/>
+    </div>
+
+</section>
+
+
+<style>
+    section{
+        height: 100%;
+        width: 49%;
+        /* background-color: rgb(62, 59, 231); */
+    }
+    
+    #containerTittle{
+        height: 58.9%;
+        /* background-color: rgb(199, 231, 59); */
+        display: flex;
+        align-items: center;
+        padding-left: 1rem;
+        
+    }
+    #containerDescription{
+        height: 29.9%;
+        /* background-color: rgb(52, 141, 71); */
+        display: flex;
+        align-items: center;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        
+    }
+    #containerButton{
+        height: 10%;
+        /* background-color: rgb(165, 79, 122); */
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+</style>
